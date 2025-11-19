@@ -73,7 +73,7 @@ export default function FeaturedCollection() {
       </p>
 
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-2sm:px-24">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-2 sm:px-24">
         {products.map((item) => (
           <div key={item.id} className="cursor-pointer w-full max-w-[260px]">
 
