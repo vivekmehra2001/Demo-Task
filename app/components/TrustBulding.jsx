@@ -12,7 +12,7 @@ export default function TrustBuilding() {
     },
     {
       icon: "/images/Group 6.svg",
-      text: "/images/70+ Years Legacy.svg",
+      text: "/images/70-years-legacy.svg",
     },
     {
       icon: "/images/Salvaged Antiques.svg",
