@@ -3,11 +3,12 @@ import { useState } from "react";
 import ElephantSizeGuide from "./ElephantSizeGuide";
 
 export default function RoyalCollection() {
-  const [filters, setFilters] = useState({
-    style: "",
-    finish: "",
-    material: "",
-  });
+const [filters, setFilters] = useState({
+  style: "Hand Painted",
+  finish: "Single Color Polish", 
+  material: "Wooden",
+});
+
 
   const styles = [
     "Hand Painted",
@@ -70,7 +71,7 @@ export default function RoyalCollection() {
 
 
         <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-0">
-          <p className="font-bold text-[15px] w-full md:w-[200px] md:text-left text-center md:py-3 py-2">
+          <p className="font-bold text-[15px]  w-full md:w-[200px] md:text-left text-center md:py-3 py-2">
             Style / Craft
           </p>
 
@@ -99,7 +100,7 @@ export default function RoyalCollection() {
               <button
                 key={item.name}
                 onClick={() => handleSelect("finish", item.name)}
-                className={`px-3 py-2 sm:px-5 sm:py-3 text-sm rounded-[50px] border flex items-center gap-2 transition flex-shrink-0
+                className={`px-3 py-2 sm:px-3 sm:py-2 text-sm rounded-[50px] border flex items-center gap-2 transition flex-shrink-0
                        ${filters.finish === item.name ? "bg-[#FFE9CF] text-[#121212] border-[#C08237]" : "bg-white text-black border-[#A49C93]"}
                 `}
               >
@@ -123,7 +124,7 @@ export default function RoyalCollection() {
               <button
                 key={item.name}
                 onClick={() => handleSelect("material", item.name)}
-                className={`px-3 py-2 sm:px-5 sm:py-3 text-sm rounded-[50px] border flex items-center gap-2 transition flex-shrink-0
+                className={`px-3 py-2 sm:px-3 sm:py-2 text-sm rounded-[50px] border flex items-center gap-2 transition flex-shrink-0
                        ${filters.material === item.name ? "bg-[#FFE9CF] text-[#121212] border-[#C08237]" : "bg-white text-black border-[#A49C93]"}
                 `}
               >

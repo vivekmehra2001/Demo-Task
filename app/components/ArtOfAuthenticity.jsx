@@ -2,7 +2,7 @@
 
 export default function ArtOfAuthenticity() {
   return (
-    <section className="w-full py-7 flex flex-col items-center text-center px-4 border">
+    <section className="w-full py-7 flex flex-col items-center text-center px-4 ">
       
       
       <p className=" text-sm md:text-base tracking-widest text-gray-500 uppercase">
